@@ -1,0 +1,83 @@
+Most effective search query 'with no space between ORs:
+
+("requirements engineering"OR"Requirements elicitation" OR "requirements analysis"OR"requirements specification"OR"requirements modeling"OR" requirements validation"OR"requirements verification"OR"requirements management"OR"requirements traceability"OR"requirements classification"OR"requirements document") AND 
+("Natural Language Processing"OR"NLP"OR"statistical NLP"OR"machine learning"OR"deep learning"OR"extraction"OR"retrieval"OR"text mining"OR"text analysis"OR"linguistic instruments"OR"linguistic approaches")
+
+
+==========================================
+(NEW ONE)
+S1
+(("requirements engineering"OR"Requirements elicitation" OR "requirements analysis"OR"requirements specification"OR"requirements modeling") AND ("Natural Language Processing"OR"NLP"OR"statistical NLP"OR"machine learning"OR"deep learning"OR"extraction"OR"retrieval"OR"text mining"OR"text analysis"OR"linguistic instruments"OR"linguistic approaches"))
+
+S2
+(("requirements validation"OR"requirements verification"OR"requirements management"OR"requirements traceability"OR"requirements classification"OR"requirements document") AND ("Natural Language Processing"OR"NLP"OR"statistical NLP"OR"machine learning"OR"deep learning"OR"extraction"OR"retrieval"OR"text mining"OR"text analysis"OR"linguistic instruments"OR"linguistic approaches"))
+
+Example of iterated search query with each RE keywords and all NLP keywords (11 search strings):
+
+**** S1 ****
+
+("requirements engineering")AND("Natural Language Processing"OR"NLP"OR"NLP statistical NLP"OR"machine learning"OR"deep learning"OR"extraction"OR"retrieval"OR"text mining"OR"text analysis"OR"linguistic instrument"OR"linguistic approach")
+
+
+**** S2 ****
+
+("requirements elicitation")AND("Natural Language Processing"OR"NLP"OR"NLP statistical NLP"OR"machine learning"OR"deep learning"OR"extraction"OR"retrieval"OR"text mining"OR"text analysis"OR"linguistic instrument"OR"linguistic approach")
+
+
+**** S3 ****
+
+("requirements analysis")AND("Natural Language Processing"OR"NLP"OR"NLP statistical NLP"OR"machine learning"OR"deep learning"OR"extraction"OR"retrieval"OR"text mining"OR"text analysis"OR"linguistic instrument"OR"linguistic approach")
+
+
+**** S4 ****
+
+("requirements specification")AND("Natural Language Processing"OR"NLP"OR"NLP statistical NLP"OR"machine learning"OR"deep learning"OR"extraction"OR"retrieval"OR"text mining"OR"text analysis"OR"linguistic instrument"OR"linguistic approach")
+
+
+**** S5 ****
+
+("requirements modeling")AND("Natural Language Processing"OR"NLP"OR"NLP statistical NLP"OR"machine learning"OR"deep learning"OR"extraction"OR"retrieval"OR"text mining"OR"text analysis"OR"linguistic instrument"OR"linguistic approach")
+
+
+**** S6 ****
+
+("requirements validation")AND("Natural Language Processing"OR"NLP"OR"NLP statistical NLP"OR"machine learning"OR"deep learning"OR"extraction"OR"retrieval"OR"text mining"OR"text analysis"OR"linguistic instrument"OR"linguistic approach")
+
+
+**** S7 ****
+
+("requirements verification")AND("Natural Language Processing"OR"NLP"OR"NLP statistical NLP"OR"machine learning"OR"deep learning"OR"extraction"OR"retrieval"OR"text mining"OR"text analysis"OR"linguistic instrument"OR"linguistic approach")
+
+
+**** S8 ****
+
+("requirements management")AND("Natural Language Processing"OR"NLP"OR"NLP statistical NLP"OR"machine learning"OR"deep learning"OR"extraction"OR"retrieval"OR"text mining"OR"text analysis"OR"linguistic instrument"OR"linguistic approach")
+
+
+**** S9 ****
+
+("requirements traceability")AND("Natural Language Processing"OR"NLP"OR"NLP statistical NLP"OR"machine learning"OR"deep learning"OR"extraction"OR"retrieval"OR"text mining"OR"text analysis"OR"linguistic instrument"OR"linguistic approach")
+
+
+**** S10 ****
+
+("requirements classification")AND("Natural Language Processing"OR"NLP"OR"NLP statistical NLP"OR"machine learning"OR"deep learning"OR"extraction"OR"retrieval"OR"text mining"OR"text analysis"OR"linguistic instrument"OR"linguistic approach")
+
+
+**** S11 ****
+
+("requirements documents")AND("Natural Language Processing"OR"NLP"OR"NLP statistical NLP"OR"machine learning"OR"deep learning"OR"extraction"OR"retrieval"OR"text mining"OR"text analysis"OR"linguistic instrument"OR"linguistic approach")
+
+
+
+===========================================
+
+Basic search query with both RE and NLP keywords 'with space between ORs' -not working with some DLs:
+
+("requirements engineering" OR "Requirements elicitation" OR requirements analysis" OR "requirements specification" OR "requirements modeling" OR " requirements validation" OR "requirements verification" OR "requirements management" OR "requirements traceability" OR "requirements classification" OR "requirements document") AND 
+("Natural Language Processing" OR "NLP" OR "statistical NLP" OR "machine learning" OR "deep learning" OR extraction" OR retrieval" OR "text mining" OR "text analysis" OR "linguistic instruments" OR "linguistic approaches")
+
+
+===========================================
+
+(('requirements engineering' OR 'Requirements elicitation' OR 'requirements analysis' OR 'requirements specification' OR 'requirements modeling' OR 'requirements validation' OR 'requirements verification' OR 'requirements management' OR 'requirements traceability' OR 'requirements classification' OR 'requirements document') AND  ('Natural Language Processing' OR 'NLP' OR 'statistical NLP' OR 'machine learning' OR 'deep learning' OR 'extraction' OR 'retrieval' OR 'text mining' OR 'text analysis' OR 'linguistic instruments' OR 'linguistic approaches'))
